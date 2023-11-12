@@ -9,7 +9,7 @@ export const GifSearcherApp = () => {
 
     if ( categories.includes(newCategory) ) return;
 
-    setCategories( [...categories, newCategory] )
+    setCategories( [newCategory, ...categories, ] )
     
   }
 

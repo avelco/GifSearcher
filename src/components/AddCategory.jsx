@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 
 export const AddCategory = ({ onNewCategory }) => {
 
-    const [inputValue, setInputValue] = useState('Rick and Morty');
+    const [inputValue, setInputValue] = useState('');
 
     const onInputChange = (event) => {
         setInputValue( event.target.value );
@@ -25,6 +25,7 @@ export const AddCategory = ({ onNewCategory }) => {
                 type="text"
                 value={ inputValue }
                 onChange={ onInputChange }
+                placeholder="Amazing GIFs"
             />
         </form>
     )
